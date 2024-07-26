@@ -18,4 +18,4 @@ image:
 # half: v10 -> 50% v11 -> 50%
 # second: v10-> 10% v11 90%
 # full: v10-> 0% v11: 100%
-canary: none
+canary: first
