@@ -1,23 +1,21 @@
-replicaCount: 2
+replicaCount:
+  v10: 1
+  v11: 0
 
 image:
-  repository: docker.io/nginxinc/nginx-unprivileged
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "bookworm"
+  v10:
+    repository: quay.io/redhattraining/versioned-hello
+    pullPolicy: IfNotPresent
+    tag: v1.0
+  v11:
+    repository: quay.io/redhattraining/versioned-hello
+    pullPolicy: IfNotPresent
+    tag: v1.0
 
-nameOverride: ""
-fullnameOverride: ""
-
-serviceAccount:
-  # Specifies whether a service account should be created
-  create: true
-  # Annotations to add to the service account
-  annotations: {}
-  # The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
-  name: ""
-
-service:
-  type: ClusterIP
-  port: 8080
+# Canary Deployment values:
+# none: v10 -> 100% v11 -> 0%
+# first: v10 -> 90% v11 -> 10%
+# half: v10 -> 50% v11 -> 50%
+# second: v10-> 10% v11 90%
+# full: v10-> 0% v11: 100%
+canary: none
