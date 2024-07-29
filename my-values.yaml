@@ -1,6 +1,6 @@
 replicaCount:
   v10: 1
-  v11: 0
+  v11: "1"
 image:
   v10:
     repository: quay.io/redhattraining/versioned-hello
