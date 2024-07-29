@@ -1,6 +1,6 @@
 replicaCount:
   v10: 1
-  v11: "1"
+  v11: "0"
 image:
   v10:
     repository: quay.io/redhattraining/versioned-hello
@@ -16,4 +16,4 @@ image:
 # half: v10 -> 50% v11 -> 50%
 # second: v10-> 10% v11 90%
 # full: v10-> 0% v11: 100%
-canary: full
+canary: none
