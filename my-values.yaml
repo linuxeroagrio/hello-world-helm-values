@@ -5,7 +5,7 @@ image:
   v10:
     repository: quay.io/redhattraining/versioned-hello
     pullPolicy: IfNotPresent
-    tag: v1.0
+    tag: v1.1
   v11:
     repository: quay.io/redhattraining/versioned-hello
     pullPolicy: IfNotPresent
