@@ -1,15 +1,15 @@
 replicaCount:
   v10: 1
-  v11: "0"
+  v11: 0
 image:
   v10:
     repository: quay.io/redhattraining/versioned-hello
     pullPolicy: IfNotPresent
-    tag: v1.1
+    tag: v1.0
   v11:
     repository: quay.io/redhattraining/versioned-hello
     pullPolicy: IfNotPresent
-    tag: v1.1
+    tag: v1.0
 # Canary Deployment values:
 # none: v10 -> 100% v11 -> 0%
 # first: v10 -> 90% v11 -> 10%
